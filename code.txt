@@ -1,0 +1,13 @@
+cd "C:\Users\amith\Downloads\New folder"
+$secureCode = Read-Host "Create your private admin passphrase (16+ characters)" -AsSecureString
+$env:ADMIN_CODE = [System.Net.NetworkCredential]::new("", $secureCode).Password
+node server.js
+
+
+cd "C:\Users\amith\Downloads\New folder"
+$env:ADMIN_CODE = Read-Host "Choose your admin code (at least 4 characters)"
+node server.js
+
+cd "C:\Users\amith\Downloads\New folder"
+$env:ADMIN_CODE = Read-Host "Enter an admin code (at least 4 characters)"
+node server.js

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta name="robots" content="noindex">
+  <title>Page not found — Amith</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Amith home">amith<span>.</span></a>
+      <a class="nav-cta" href="index.html#work">View selected work <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main class="wrap not-found" id="main-content">
+    <div>
+      <span class="eyebrow">404 · Page not found</span>
+      <h1>Looks like a<br>wrong turn.</h1>
+      <p>The page may have moved, or the link may be out of date. Let's get you back to somewhere useful.</p>
+      <a class="button" href="index.html">Back to the homepage <span class="arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </main>
+  <footer class="footer"><div class="wrap footer-bottom"><span>© <span id="year"></span> Amith</span><a href="index.html">Home ↑</a></div></footer>
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
